@@ -25,6 +25,7 @@ class GreetingPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Welcome Image
             Container(
               width: 200,
               height: 200,
@@ -37,6 +38,7 @@ class GreetingPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 40),
+            // Button to Calculator Page
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -56,6 +58,7 @@ class GreetingPage extends StatelessWidget {
               child: Text('Go to Calculator Page'),
             ),
             SizedBox(height: 20),
+            // Button to Weather Page
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -75,8 +78,8 @@ class GreetingPage extends StatelessWidget {
               child: Text('Go to Weather Page'),
             ),
             SizedBox(height: 20),
+            // Button to Notes Page
             ElevatedButton(
-              // Add the "Go to Notes" button
               onPressed: () {
                 Navigator.push(
                   context,
